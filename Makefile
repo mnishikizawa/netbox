@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := help
+
 run: ## Pulling docker image and Start up netbox
 	@echo "Starting netbox"
 	docker-compose up -d
