@@ -9,7 +9,7 @@ stop: ## Stopping docker without save
 	docker-compose stop
 
 save: ## Saving changes and uploading it to Docker Hub
-	docker commit $$(docker ps |grep 'postgres' |awk '{print $$1}') postgres:9.6
+	docker commit $$(docker ps |grep 'postgres' |awk '{print $$1}') vcjp/postgres:9.6
 	docker push vcjp/postgres:9.6
 
 log: ## Show docker-compose log
